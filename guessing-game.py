@@ -8,8 +8,18 @@ def main():
         if guess.lower() == animal:
             zero += 1
             print("Congratulations you guessed the animal!")
-        elif guess.lower() == "quit":
+            Thepanda = 0
+            while Thepanda == 0: 
+                response = input("Do you like this animal? Y/N: ")
+                if response[0].lower() == "n":
+                    print("Aw that's a shame they're so cute.")
+                    Thepanda += 1
+                elif response [0].lower() == "y":
+                    print("Yay me too!")
+                    Thepanda += 1
+        elif guess[0].lower() == "q":
             zero += 1
         else:
-            print("Wrong animal, try again.")        
+            print("Wrong animal, try again.")
+    print("Thanks for playing.")
 main()
