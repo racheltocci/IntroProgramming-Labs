@@ -6,5 +6,9 @@ def main():
 
     value = 4*(1-total)
     print(value)
+    import math
+    z = math.pi
+    a = float(z - value)
+    print ("Variance:", a)
 
 main()
